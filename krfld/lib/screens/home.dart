@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -13,10 +12,12 @@ class Home extends StatelessWidget {
         mainAxisSpacing: 25,
         crossAxisSpacing: 25,
         children: [
-          Image.network('https://picsum.photos/400'),
-          Image.network('https://picsum.photos/400'),
-          Image.network('https://picsum.photos/400'),
-          Image.network('https://picsum.photos/400'),
+          Image.network(
+            'https://picsum.photos/400',
+          ),
+          Image.network('https://picsum.photos/300'),
+          Image.network('https://picsum.photos/200'),
+          Image.network('https://picsum.photos/100'),
         ],
       ),
     );
